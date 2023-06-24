@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+    }
+
+    #cityname {
+      font-family: 'Chakra Petch', sans-serif;
+    }
+
+    .bg {
+      /* Full height */
+      height: 100vh;
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .form-label {
+      color: aliceblue;
+    }
+
+    .input-box {
+      /* Gray color with translucent style */
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .input-group {
+      margin: auto;
+    }
+
+    p {
+      font-size: medium;
+      color: white;
+      font-family: 'Chakra Petch', sans-serif;
+    }
+
+    footer {
+      color: white;
+      color: rgba(0, 0, 0, 0.5);
+      text-align: center;
+      padding: 6vh;
+    }
+
+    .icon1 {
+      color: aliceblue;
+      margin: 10px;
+    }
+
+    @media(max-width:1028px) {
+
+      body,
+      html {
+        margin: 0;
+      }
+
+      .bg {
+        background-position: center;
+        background-size: cover;
+      }
+
+      .input-box {
+        padding: 500px 200px;
+      }
+
+      .footer{
+        display: flex;
+        flex-direction: row;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <center>
+    <div class="bg" style="background-image: url(images/new.jpg)">
+      <div class="input-box">
+        <h1>
+          <form action="/" method="post" class="flex">
+            <div class="input-group">
+              <div class="form-outline">
+                <label class="form-label" for="form1" id="cityname">City Name:</label>
+                <input type="text" id="cityInput" class="form-control" name="cityName">
+              </div>
+              <br>
+              <button type="submit" class="btn btn-primary">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </form>
+        </h1>
+
+        <br>
+
+        <script src="https://kit.fontawesome.com/450dc08ccd.js" crossorigin="anonymous"></script>
+        <footer class="icon">
+          <div class="footer">
+          <a href="https://github.com/nikhilverma17" target="_blank"><i
+              class="icon1 fa-brands fa-github  fa-2xl"></i></a>
+          <a href="mailto:iamvermanikhil@gmail.com" target="_blank"><i
+              class="icon1 fa-solid fa-envelope fa-2xl"></i></a>
+          <a href="https://www.linkedin.com/in/nihkil-verma-465848139/" target="_blank"><i
+              class="icon1 fa-brands fa-linkedin fa-2xl"></i></a>
+          <a href="https://twitter.com/thenikhil_verma" target="_blank"><i
+              class="icon1 fa-brands fa-twitter fa-2xl"></i></a>
+          <a href="https://www.instagram.com/thevermanikhil/" target="_blank"><i
+              class="icon1 fa-brands fa-instagram fa-2xl"></i></a>
+          <br><br><br>
+          
+        </div>
+        <p class="p-footer"><i class="icon1 fa-solid fa-copyright fa-lg"></i><br> Nikhil Verma</p>
+        </footer>
+      </div>
+    </div>
+  </center>
+
+
+</body>
+
+</html>
